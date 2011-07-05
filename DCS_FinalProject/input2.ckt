@@ -1,0 +1,30 @@
+# INPUT 7
+# OUTPUT 4
+# NOT 5
+# AND 1
+# NAND 4
+# NOR 2
+INPUT(G0)
+INPUT(G1)
+INPUT(G2)
+INPUT(G3)
+INPUT(G5)
+INPUT(G6)
+INPUT(G7)
+OUTPUT(G17)
+OUTPUT(G10)
+OUTPUT(G11)
+OUTPUT(G13)
+net25(1) = NOR(G7, G1)
+n102(1) = NOT(G5)
+n103(1) = NOT(G1)
+n104(1) = NOT(G7)
+net58(1) = NOT(G0)
+G13(1) = NOR(G2, net25)
+net32(1) = NAND(G3, n102, n103, n104)
+net31(1) = NAND(net58, n102, G6)
+G10(1) = AND(net32, G0)
+G11(1) = NAND(net32, net31)
+net30(1) = NAND(net31, net32)
+G17(1) = NOT(net30)
+"STAT_RPT

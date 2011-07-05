@@ -1,0 +1,20 @@
+# INPUT 5
+# OUTPUT 2
+# NOT 1
+# NAND 4
+# NOR 2
+INPUT(G1)
+INPUT(G2)
+INPUT(G3)
+INPUT(G4)
+INPUT(G5)
+OUTPUT(G16)
+OUTPUT(G17)
+Gate3(1) = NOR(G2, G5)
+Gate2(1) = NAND(G3, G4)
+Gate1(1) = NAND(G1, G3)
+Gate5(1) = NOT(Gate2)
+Gate4(1) = NAND(Gate2, G2)
+G17(1) = NOR(Gate1, Gate4)
+G16(1) = NAND(Gate5, Gate3)
+STAT_RPT
