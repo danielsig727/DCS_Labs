@@ -1,0 +1,48 @@
+ncverilog: 08.10-p002: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	08.10-p002: Started on Jun 22, 2011 at 13:34:54 CST
+ncverilog
+	-f Run.f
+		+notimingcheck
+		TESTBED.v
+		-access
+		+r
+Recompiling... reason: file './LAB3.v' is newer than expected.
+	expected: Wed Jun 22 13:05:24 2011
+	actual:   Wed Jun 22 13:06:43 2011
+file: TESTBED.v
+	module worklib.LAB3:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+                    .OUT(OUT),
+                           |
+ncelab: *W,CUVMPW (./TESTBED.v,35|27): port sizes differ in port connection.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LAB3:v <0x65511bac>
+			streams:  20, words:  6548
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  3       3
+		Registers:               18      18
+		Scalar wires:             4       -
+		Expanded wires:           6       1
+		Vectored wires:           1       -
+		Always blocks:            9       9
+		Initial blocks:           3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.TESTBED:v
+Loading snapshot worklib.TESTBED:v .................... Done
+ncsim> source /usr/ius81/tools/inca/files/ncsimrc
+ncsim> run
+Novas FSDB Dumper for Verilog-XL, Release 2007.10 (Linux) 10/02/2007
+Copyright (C) 1996 - 2007 by Novas Software, Inc.
+*Novas* Create FSDB file 'LAB3.fsdb'
+*Novas* Begin traversing the top scope(TESTBED), layer(0).
+*Novas* End of traversing the top scope(TESTBED)
+Simulation complete via $finish(1) at time 45500 PS + 0
+./PATTERN.v:83         $finish;
+ncsim> exit
+TOOL:	ncverilog	08.10-p002: Exiting on Jun 22, 2011 at 13:34:58 CST  (total: 00:00:04)

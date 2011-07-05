@@ -1,0 +1,71 @@
+ncverilog: 08.10-p002: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	08.10-p002: Started on Mar 31, 2011 at 15:41:00 CST
+ncverilog
+	-f Run.f
+		+notimingcheck
+		TESTBED.v
+		-access
+		+r
+Loading snapshot worklib.sNAND4:v .................... Done
+ncsim> source /usr/ius81/tools/inca/files/ncsimrc
+ncsim> run
+Novas FSDB Dumper for Verilog-XL, Release 2007.10 (Linux) 10/02/2007
+Copyright (C) 1996 - 2007 by Novas Software, Inc.
+*Novas* Create FSDB file 'LAB1.fsdb'
+*Novas* Begin traversing the top scope(sNAND4), layer(0).
+*Novas* End of traversing the top scope(sNAND4)
+*Novas* Begin traversing the top scope(sAND2), layer(0).
+*Novas* End of traversing the top scope(sAND2)
+*Novas* Begin traversing the top scope(sAND3), layer(0).
+*Novas* End of traversing the top scope(sAND3)
+*Novas* Begin traversing the top scope(sAND4), layer(0).
+*Novas* End of traversing the top scope(sAND4)
+*Novas* Begin traversing the top scope(sNOR3), layer(0).
+*Novas* End of traversing the top scope(sNOR3)
+*Novas* Begin traversing the top scope(sNOR4), layer(0).
+*Novas* End of traversing the top scope(sNOR4)
+*Novas* Begin traversing the top scope(sOR2), layer(0).
+*Novas* End of traversing the top scope(sOR2)
+*Novas* Begin traversing the top scope(sOR3), layer(0).
+*Novas* End of traversing the top scope(sOR3)
+*Novas* Begin traversing the top scope(sOR4), layer(0).
+*Novas* End of traversing the top scope(sOR4)
+*Novas* Begin traversing the top scope(sNOT), layer(0).
+*Novas* End of traversing the top scope(sNOT)
+*Novas* Begin traversing the top scope(TESTBED), layer(0).
+*Novas* End of traversing the top scope(TESTBED)
+!!Pattern            1 IN = 111111111
+start time                  100
+end time                 1100 PASS!!
+!!Pattern            2 IN = 000000000
+start time                 1200
+end time                 2200 PASS!!
+!!Pattern            3 IN = 110010111
+start time                 2300
+end time                 3300 PASS!!
+!!Pattern            4 IN = 111000000
+start time                 3400
+end time                 4400 PASS!!
+!!Pattern            5 IN = 101010100
+start time                 4500
+end time                 5500 PASS!!
+!!Pattern            6 IN = 000111000
+start time                 5600
+end time                 6600 PASS!!
+!!Pattern            7 IN = 001010100
+start time                 6700
+end time                 7700 PASS!!
+!!Pattern            8 IN = 000000111
+start time                 7800
+end time                 8800 PASS!!
+!!Pattern            9 IN = 100010001
+start time                 8900
+end time                 9900 PASS!!
+!!Pattern           10 IN = 101110100
+start time                10000
+end time                11000 PASS!!
+ \(¡Ã¡¾¡Ã)/(\¡Ã¡¾)/\(     )/\(¡¾¡Ã/)\(¡Ã¡¾¡Ã)/
+Simulation complete via $finish(1) at time 110 NS + 0
+./PATTERN.v:100                     $finish;
+ncsim> exit
+TOOL:	ncverilog	08.10-p002: Exiting on Mar 31, 2011 at 15:41:02 CST  (total: 00:00:02)

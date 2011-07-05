@@ -1,0 +1,45 @@
+ncverilog: 08.10-p002: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	08.10-p002: Started on Jun 22, 2011 at 20:01:17 CST
+ncverilog
+	-f Run.f
+		+notimingcheck
+		TESTBED.v
+		-access
+		+r
+Recompiling... reason: file './Final.v' is newer than expected.
+	expected: Wed Jun 22 19:32:38 2011
+	actual:   Wed Jun 22 19:33:19 2011
+file: TESTBED.v
+	module worklib.Final:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.Final:v <0x2dc2ed41>
+			streams:  11, words:  3073
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  3       3
+		Registers:               12      12
+		Scalar wires:             8       -
+		Vectored wires:           1       -
+		Always blocks:            8       8
+		Initial blocks:           3       3
+		Cont. assignments:        1       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.TESTBED:v
+Loading snapshot worklib.TESTBED:v .................... Done
+ncsim> source /usr/ius81/tools/inca/files/ncsimrc
+ncsim> run
+Novas FSDB Dumper for Verilog-XL, Release 2007.10 (Linux) 10/02/2007
+Copyright (C) 1996 - 2007 by Novas Software, Inc.
+*Novas* Create FSDB file 'Final.fsdb'
+*Novas* Begin traversing the top scope(TESTBED), layer(0).
+*Novas* End of traversing the top scope(TESTBED)
+Simulation complete via $finish(1) at time 50500 PS + 0
+./PATTERN.v:117         $finish;
+ncsim> exit
+TOOL:	ncverilog	08.10-p002: Exiting on Jun 22, 2011 at 20:01:21 CST  (total: 00:00:04)

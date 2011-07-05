@@ -1,0 +1,174 @@
+ncverilog: 08.10-p002: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	08.10-p002: Started on Jun 16, 2011 at 16:35:51 CST
+ncverilog
+	-f Run.f
+		-sv
+		+notimingcheck
+		TESTBED.v
+		-access
+		+r
+Recompiling... reason: file './PATTERN.v' is newer than expected.
+	expected: Thu Jun 16 16:05:24 2011
+	actual:   Thu Jun 16 16:06:18 2011
+file: TESTBED.v
+	module worklib.PATTERN:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.PATTERN:v <0x12f499c6>
+			streams:   2, words:  2910
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  3       3
+		Registers:                8       8
+		Scalar wires:             1       -
+		Vectored wires:           3       -
+		Always blocks:            2       2
+		Initial blocks:           2       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.TESTBED:v
+Loading snapshot worklib.TESTBED:v .................... Done
+ncsim> source /usr/ius81/tools/inca/files/ncsimrc
+ncsim> run
+Novas FSDB Dumper for Verilog-XL, Release 2007.10 (Linux) 10/02/2007
+Copyright (C) 1996 - 2007 by Novas Software, Inc.
+*Novas* Create FSDB file 'LAB4.fsdb'
+*Novas* Begin traversing the top scope(TESTBED), layer(0).
+*Novas* End of traversing the top scope(TESTBED)
+INPUT1= 0 INPUT2= 0  OUT= 00 sim_OUT= 00
+INPUT1= 0 INPUT2= 1  OUT= 01 sim_OUT= 01
+INPUT1= 0 INPUT2= 2  OUT= 02 sim_OUT= 02
+INPUT1= 0 INPUT2= 3  OUT= 03 sim_OUT= 03
+INPUT1= 0 INPUT2= 4  OUT= 04 sim_OUT= 04
+INPUT1= 0 INPUT2= 5  OUT= 05 sim_OUT= 05
+INPUT1= 0 INPUT2= 6  OUT= 06 sim_OUT= 06
+INPUT1= 0 INPUT2= 7  OUT= 07 sim_OUT= 07
+INPUT1= 0 INPUT2= 8  OUT= 08 sim_OUT= 08
+INPUT1= 0 INPUT2= 9  OUT= 09 sim_OUT= 09
+INPUT1= 0 INPUT2= a  OUT= 0a sim_OUT= 0a
+INPUT1= 0 INPUT2= b  OUT= 0b sim_OUT= 0b
+INPUT1= 0 INPUT2= c  OUT= 0c sim_OUT= 0c
+INPUT1= 0 INPUT2= d  OUT= 0d sim_OUT= 0d
+INPUT1= 0 INPUT2= e  OUT= 0e sim_OUT= 0e
+INPUT1= 0 INPUT2= f  OUT= 0f sim_OUT= 0f
+INPUT1= 1 INPUT2= 0  OUT= 01 sim_OUT= 01
+INPUT1= 1 INPUT2= 1  OUT= 02 sim_OUT= 02
+INPUT1= 1 INPUT2= 2  OUT= 03 sim_OUT= 03
+INPUT1= 1 INPUT2= 3  OUT= 04 sim_OUT= 04
+INPUT1= 1 INPUT2= 4  OUT= 05 sim_OUT= 05
+INPUT1= 1 INPUT2= 5  OUT= 06 sim_OUT= 06
+INPUT1= 1 INPUT2= 6  OUT= 07 sim_OUT= 07
+INPUT1= 1 INPUT2= 7  OUT= 08 sim_OUT= 08
+INPUT1= 1 INPUT2= 8  OUT= 09 sim_OUT= 09
+INPUT1= 1 INPUT2= 9  OUT= 0a sim_OUT= 0a
+INPUT1= 1 INPUT2= a  OUT= 0b sim_OUT= 0b
+INPUT1= 1 INPUT2= b  OUT= 0c sim_OUT= 0c
+INPUT1= 1 INPUT2= c  OUT= 0d sim_OUT= 0d
+INPUT1= 1 INPUT2= d  OUT= 0e sim_OUT= 0e
+INPUT1= 1 INPUT2= e  OUT= 0f sim_OUT= 0f
+INPUT1= 1 INPUT2= f  OUT= 10 sim_OUT= 10
+INPUT1= 2 INPUT2= 0  OUT= 02 sim_OUT= 02
+INPUT1= 2 INPUT2= 1  OUT= 03 sim_OUT= 03
+INPUT1= 2 INPUT2= 2  OUT= 04 sim_OUT= 04
+INPUT1= 2 INPUT2= 3  OUT= 05 sim_OUT= 05
+INPUT1= 2 INPUT2= 4  OUT= 06 sim_OUT= 06
+INPUT1= 2 INPUT2= 5  OUT= 07 sim_OUT= 07
+INPUT1= 2 INPUT2= 6  OUT= 08 sim_OUT= 08
+INPUT1= 2 INPUT2= 7  OUT= 09 sim_OUT= 09
+INPUT1= 2 INPUT2= 8  OUT= 0a sim_OUT= 0a
+INPUT1= 2 INPUT2= 9  OUT= 0b sim_OUT= 0b
+INPUT1= 2 INPUT2= a  OUT= 0c sim_OUT= 0c
+INPUT1= 2 INPUT2= b  OUT= 0d sim_OUT= 0d
+INPUT1= 2 INPUT2= c  OUT= 0e sim_OUT= 0e
+INPUT1= 2 INPUT2= d  OUT= 0f sim_OUT= 0f
+INPUT1= 2 INPUT2= e  OUT= 10 sim_OUT= 10
+INPUT1= 2 INPUT2= f  OUT= 11 sim_OUT= 11
+INPUT1= 3 INPUT2= 0  OUT= 03 sim_OUT= 03
+INPUT1= 3 INPUT2= 1  OUT= 04 sim_OUT= 04
+INPUT1= 3 INPUT2= 2  OUT= 05 sim_OUT= 05
+INPUT1= 3 INPUT2= 3  OUT= 06 sim_OUT= 06
+INPUT1= 3 INPUT2= 4  OUT= 07 sim_OUT= 07
+INPUT1= 3 INPUT2= 5  OUT= 08 sim_OUT= 08
+INPUT1= 3 INPUT2= 6  OUT= 09 sim_OUT= 09
+INPUT1= 3 INPUT2= 7  OUT= 0a sim_OUT= 0a
+INPUT1= 3 INPUT2= 8  OUT= 0b sim_OUT= 0b
+INPUT1= 3 INPUT2= 9  OUT= 0c sim_OUT= 0c
+INPUT1= 3 INPUT2= a  OUT= 0d sim_OUT= 0d
+INPUT1= 3 INPUT2= b  OUT= 0e sim_OUT= 0e
+INPUT1= 3 INPUT2= c  OUT= 0f sim_OUT= 0f
+INPUT1= 3 INPUT2= d  OUT= 10 sim_OUT= 10
+INPUT1= 3 INPUT2= e  OUT= 11 sim_OUT= 11
+INPUT1= 3 INPUT2= f  OUT= 12 sim_OUT= 12
+INPUT1= 4 INPUT2= 0  OUT= 04 sim_OUT= 04
+INPUT1= 4 INPUT2= 1  OUT= 05 sim_OUT= 05
+INPUT1= 4 INPUT2= 2  OUT= 06 sim_OUT= 06
+INPUT1= 4 INPUT2= 3  OUT= 07 sim_OUT= 07
+INPUT1= 4 INPUT2= 4  OUT= 08 sim_OUT= 08
+INPUT1= 4 INPUT2= 5  OUT= 09 sim_OUT= 09
+INPUT1= 4 INPUT2= 6  OUT= 0a sim_OUT= 0a
+INPUT1= 4 INPUT2= 7  OUT= 0b sim_OUT= 0b
+INPUT1= 4 INPUT2= 8  OUT= 0c sim_OUT= 0c
+INPUT1= 4 INPUT2= 9  OUT= 0d sim_OUT= 0d
+INPUT1= 4 INPUT2= a  OUT= 0e sim_OUT= 0e
+INPUT1= 4 INPUT2= b  OUT= 0f sim_OUT= 0f
+INPUT1= 4 INPUT2= c  OUT= 10 sim_OUT= 10
+INPUT1= 4 INPUT2= d  OUT= 11 sim_OUT= 11
+INPUT1= 4 INPUT2= e  OUT= 12 sim_OUT= 12
+INPUT1= 4 INPUT2= f  OUT= 13 sim_OUT= 13
+INPUT1= 5 INPUT2= 0  OUT= 05 sim_OUT= 05
+INPUT1= 5 INPUT2= 1  OUT= 06 sim_OUT= 06
+INPUT1= 5 INPUT2= 2  OUT= 07 sim_OUT= 07
+INPUT1= 5 INPUT2= 3  OUT= 08 sim_OUT= 08
+INPUT1= 5 INPUT2= 4  OUT= 09 sim_OUT= 09
+INPUT1= 5 INPUT2= 5  OUT= 0a sim_OUT= 0a
+INPUT1= 5 INPUT2= 6  OUT= 0b sim_OUT= 0b
+INPUT1= 5 INPUT2= 7  OUT= 0c sim_OUT= 0c
+INPUT1= 5 INPUT2= 8  OUT= 0d sim_OUT= 0d
+INPUT1= 5 INPUT2= 9  OUT= 0e sim_OUT= 0e
+INPUT1= 5 INPUT2= a  OUT= 0f sim_OUT= 0f
+INPUT1= 5 INPUT2= b  OUT= 10 sim_OUT= 10
+INPUT1= 5 INPUT2= c  OUT= 11 sim_OUT= 11
+INPUT1= 5 INPUT2= d  OUT= 12 sim_OUT= 12
+INPUT1= 5 INPUT2= e  OUT= 13 sim_OUT= 13
+INPUT1= 5 INPUT2= f  OUT= 14 sim_OUT= 14
+INPUT1= 6 INPUT2= 0  OUT= 06 sim_OUT= 06
+INPUT1= 6 INPUT2= 1  OUT= 07 sim_OUT= 07
+INPUT1= 6 INPUT2= 2  OUT= 08 sim_OUT= 08
+INPUT1= 6 INPUT2= 3  OUT= 09 sim_OUT= 09
+INPUT1= 6 INPUT2= 4  OUT= 0a sim_OUT= 0a
+INPUT1= 6 INPUT2= 5  OUT= 0b sim_OUT= 0b
+INPUT1= 6 INPUT2= 6  OUT= 0c sim_OUT= 0c
+INPUT1= 6 INPUT2= 7  OUT= 0d sim_OUT= 0d
+INPUT1= 6 INPUT2= 8  OUT= 0e sim_OUT= 0e
+INPUT1= 6 INPUT2= 9  OUT= 0f sim_OUT= 0f
+INPUT1= 6 INPUT2= a  OUT= 10 sim_OUT= 10
+INPUT1= 6 INPUT2= b  OUT= 11 sim_OUT= 11
+INPUT1= 6 INPUT2= c  OUT= 12 sim_OUT= 12
+INPUT1= 6 INPUT2= d  OUT= 13 sim_OUT= 13
+INPUT1= 6 INPUT2= e  OUT= 14 sim_OUT= 14
+INPUT1= 6 INPUT2= f  OUT= 15 sim_OUT= 15
+INPUT1= 7 INPUT2= 0  OUT= 07 sim_OUT= 07
+INPUT1= 7 INPUT2= 1  OUT= 08 sim_OUT= 08
+INPUT1= 7 INPUT2= 2  OUT= 09 sim_OUT= 09
+INPUT1= 7 INPUT2= 3  OUT= 0a sim_OUT= 0a
+INPUT1= 7 INPUT2= 4  OUT= 0b sim_OUT= 0b
+INPUT1= 7 INPUT2= 5  OUT= 0c sim_OUT= 0c
+INPUT1= 7 INPUT2= 6  OUT= 0d sim_OUT= 0d
+INPUT1= 7 INPUT2= 7  OUT= 0e sim_OUT= 0e
+INPUT1= 7 INPUT2= 8  OUT= 0f sim_OUT= 0f
+INPUT1= 7 INPUT2= 9  OUT= 10 sim_OUT= 10
+INPUT1= 7 INPUT2= a  OUT= 11 sim_OUT= 11
+INPUT1= 7 INPUT2= b  OUT= 12 sim_OUT= 12
+INPUT1= 7 INPUT2= c  OUT= 13 sim_OUT= 13
+INPUT1= 7 INPUT2= d  OUT= 14 sim_OUT= 14
+INPUT1= 7 INPUT2= e  OUT= 15 sim_OUT= 15
+INPUT1= 7 INPUT2= f  OUT= 16 sim_OUT= 16
+INPUT1= 8 INPUT2= 0  OUT= 00 sim_OUT= 08 <= FAILED!!! QQ
+Simulation complete via $finish(1) at time 133500 PS + 0
+./PATTERN.v:42 					$finish;
+ncsim> exit
+TOOL:	ncverilog	08.10-p002: Exiting on Jun 16, 2011 at 16:35:56 CST  (total: 00:00:05)

@@ -1,0 +1,41 @@
+ncverilog: 08.10-p002: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	08.10-p002: Started on Feb 23, 2011 at 11:24:06 CST
+ncverilog
+	-f Run.f
+		+notimingcheck
+		TESTBED.v
+		-access
+		+r
+Recompiling... reason: file './LAB.v' is newer than expected.
+	expected: Wed Feb 23 11:12:23 2011
+	actual:   Wed Feb 23 11:14:17 2011
+file: TESTBED.v
+        case 0:
+           |
+ncvlog: *E,EXPSMC (LAB.v,22|11): expecting a semicolon (';') [10.2.2][10.2(IEEE)].
+(`include file: LAB.v line 22, file: TESTBED.v line 5)
+        case 0:
+             |
+ncvlog: *E,EXPLPA (LAB.v,22|13): expecting a left parenthesis ('(') [9.5(IEEE)].
+(`include file: LAB.v line 22, file: TESTBED.v line 5)
+            break;
+                 |
+ncvlog: *E,CSISYX (LAB.v,24|17): case item syntax error [9.5(IEEE)].
+(`include file: LAB.v line 24, file: TESTBED.v line 5)
+        case 1:
+             |
+ncvlog: *E,EXPLPA (LAB.v,25|13): expecting a left parenthesis ('(') [12.1.3.4(IEEE 2001)].
+(`include file: LAB.v line 25, file: TESTBED.v line 5)
+ncvlog: *F,INTERR: INTERNAL ERROR
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncvlog	08.10-p002
+  HOSTNAME: linux15
+  OPERATING SYSTEM: Linux 2.6.9-89.ELsmp #1 SMP Mon Jun 22 12:32:43 EDT 2009 i686
+  MESSAGE: Unexpected signal #11, program terminated (null)
+-----------------------------------------------------------------
+ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 250).
+TOOL:	ncverilog	08.10-p002: Exiting on Feb 23, 2011 at 11:24:06 CST  (total: 00:00:00)
