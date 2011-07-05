@@ -50,7 +50,7 @@ int main(int argc, char **argv){
 	output_header(&mainc, &pdata_main, out);
 	simulate(&mainc, &pdata_main, inp, out);
 
-	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_time);  //graph construction and bfs completed timer ends
+	clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &end_time);
 	//printf("sizeof(start_time.tv_sec):%d, sizeof(start_time.tv_nsec):%d\n", sizeof(start_time.tv_sec), sizeof(start_time.tv_nsec));
 	//printf("s_time.tv_sec:%ld, s_time.tv_nsec:%ld\n", start_time.tv_sec, start_time.tv_nsec);
 	//printf("e_time.tv_sec:%ld, e_time.tv_nsec:%ld\n", end_time.tv_sec, end_time.tv_nsec);
